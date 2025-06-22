@@ -1,0 +1,1 @@
+Trường hợp tệp dữ liệu lớn, chia tệp lớn thành các phần dễ quản lý và xử lý 
