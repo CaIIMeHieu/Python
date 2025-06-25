@@ -1,3 +1,8 @@
-list = [ ['1','2'], ['3','4'] ]
+import pandas as pd 
 
-print( tuple(list) )
+babynames = pd.Series([
+    'Jathonathon', 'Zeltron', 'Ruger', 'Phreddy', 'Ruger', 'Chad', 'Chad',
+    'Ruger', 'Ryan', 'Ruger', 'Chad', 'Ryan', 'Phreddy', 'Phreddy', 'Phreddy',
+    'Mister', 'Zeltron', 'Ryan', 'Ruger', 'Ruger', 'Jathonathon',
+    'Jathonathon', 'Ruger', 'Chad', 'Zeltron'], dtype='string')
+

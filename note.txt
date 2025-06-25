@@ -1,1 +1,32 @@
 Trường hợp tệp dữ liệu lớn, chia tệp lớn thành các phần dễ quản lý và xử lý 
+
+--------------------------Series-----------------------------------------
+Sử dụng Series với dữ liệu có nhãn, vd : [10,20,30] có nhãn tương ứng là ["a","b","c"]
+print ser["b"] => 20 
+các phần tử trong series có thể có kiểu dữ liệu khác nhau 
+Các phương thức thông dụng trong Series : 
+Phương thức	Mô tả
+s.head(n)	        Lấy n phần tử đầu
+s.tail(n)	        Lấy n phần tử cuối
+s.mean()	        Tính trung bình
+s.sum()	            Tổng
+s.value_counts()	Đếm số lần xuất hiện
+s.unique()	        Lấy các giá trị duy nhất
+
+áp dụng logic : 
+s.apply(lambda x: x * 2)
+
+lọc dữ liệu với điều kiện : 
+s[s > 15]
+
+boolean indexing : series[boolean_series] sẽ trả về các phần từ của series với index = True
+
+.loc : để truy xuất các phần tử với index khác chữ số
+
+hàm pandas.isna chuyển 1 series thành series dạng boolean
+
+series1.index.map(series2) 
+Dựa vào index của series1 map sang giá trị index của series2 tương ứng
+
+hàm diff() tính hiệu giữa các phần tử kế tiếp 
+hàm idxmax() trả về index của phần từ có giá trị lớn nhất
