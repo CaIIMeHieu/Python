@@ -30,3 +30,12 @@ Dựa vào index của series1 map sang giá trị index của series2 tương �
 
 hàm diff() tính hiệu giữa các phần tử kế tiếp 
 hàm idxmax() trả về index của phần từ có giá trị lớn nhất
+
+lợi ích của sử dụng cloud 
+Tính scale 
+dùng bao nhiêu trả tiền bấy nhiêu 
+
+google cloud platform là một công cụ dòng lệnh để quản lý, sử dụng các dịch vụ của google cloud bằng command
+khởi tạo google cloud 
+    gcloud init
+ 

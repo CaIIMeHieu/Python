@@ -1,8 +1,10 @@
-import pandas as pd 
+import numpy as np
+import pandas as pd
 
-babynames = pd.Series([
-    'Jathonathon', 'Zeltron', 'Ruger', 'Phreddy', 'Ruger', 'Chad', 'Chad',
-    'Ruger', 'Ryan', 'Ruger', 'Chad', 'Ryan', 'Phreddy', 'Phreddy', 'Phreddy',
-    'Mister', 'Zeltron', 'Ryan', 'Ruger', 'Ruger', 'Jathonathon',
-    'Jathonathon', 'Ruger', 'Chad', 'Zeltron'], dtype='string')
+generator = np.random.default_rng(123)
+beef_prices = pd.Series(
+    data = np.round(generator.uniform(low=3, high=5, size=10), 2),
+    index = generator.choice(10, size=10, replace=False)
+)
 
+print( beef_prices.sort_index().diff().idxmax() )
